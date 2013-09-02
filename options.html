@@ -1,0 +1,76 @@
+﻿<!--
+  Copyright (c) 2012 The Chromium Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+
+  Brian Kennish <bkennish@chromium.org>
+
+  An option page for configuring notifications.
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>Notification Demo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="options.js">
+</script>
+  </head>
+  <body>
+    <h1>
+      <img src="icon-48.png" alt="Toast">
+      东方时尚自动约车
+    </h1>
+    <h2>选项</h2>
+    <form id="options">
+      <div class="row">
+        <div class="cell">启用</div><input type="checkbox" name="isActivated" checked>
+      </div>
+      <div class="row">
+        <div class="cell">刷新间隔</div>
+      <select name="frequency">
+        <option value="5">5sec</option>
+        <option value="10">10sec</option>
+        <option value="20">20sec</option>
+        <option value="30">30sec</option>
+        <option value="40">40sec</option>
+        <option value="60">1min</option>
+        <option value="120">2min</option>
+        <option value="180">3min</option>
+        <option value="300">5min</option>
+        <option value="600">10min</option>
+        <option value="1200">20min</option>
+        <option value="1800">30min</option>
+      </select>
+      </div>
+	  <div class="row">
+      <div class="cell">学员编号</div><input type="text" name="txtname">
+	  </div>
+	  <div class="row">
+      <div class="cell">密码</div><input type="text" name="txtpwd">
+	  </div>
+	  <div class="row">
+      <div class="cell">声音提醒</div><input type="checkbox" name="isSound" checked>
+	  </div>
+	  <div class="row">
+	  <div class="cell">几天后</div><select name="date">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+      </select>
+	  </div>
+	  <div class="row">
+      <div class="cell">时段</div><select name="time">
+        <option value="1">7-9</option>
+        <option value="2">9-13</option>
+        <option value="3">13-17</option>
+        <option value="4">17-19</option>
+        <option value="5">19-21</option>
+      </select>
+	  </div>
+    </form>
+  </body>
+</html>

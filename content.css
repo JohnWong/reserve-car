@@ -1,0 +1,36 @@
+.btn{
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn:hover, .btn :focus, .btn :active{
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+  text-decoration: none;
+}
+.btn:visited{
+  text-decoration: none;
+}
+#option{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+#start{
+  position: absolute;
+  right: 20px;
+  top: 60px;
+}

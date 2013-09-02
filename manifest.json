@@ -1,0 +1,38 @@
+﻿{
+  "name": "自动约车",
+  "version": "1.0",
+  "description": "东方时尚自动刷新约车",
+  "background": { "scripts": ["background.js"] },
+  "page_action" :
+  {
+    "default_icon" : "icon-19.png",
+    "default_title" : "东方时尚约车刷新"
+  },
+  "permissions" : [
+    "tabs",
+	"notifications"
+  ],
+  "content_scripts": [ {
+    "js": [ "content.js"],
+    "matches": ["http://218.205.165.196:8080/aspx/car/XYYC22.aspx"],
+    "all_frames" : true
+  }, {
+    "js": [ "before.js"],
+    "matches": ["http://218.205.165.196:8080/", "http://218.205.165.196:8080/XYYC21DR1.aspx"],
+    "run_at": "document_start"
+  }, {
+    "js": [ "login.js"],
+    "matches": ["http://218.205.165.196:8080/", "http://218.205.165.196:8080/XYYC21DR1.aspx"]
+  }],
+  "options_page": "options.html",
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "web_accessible_resources": [
+    "content.css",
+	"icon-48.png",
+	"beep.ogg"
+  ],
+  "manifest_version": 2
+}
